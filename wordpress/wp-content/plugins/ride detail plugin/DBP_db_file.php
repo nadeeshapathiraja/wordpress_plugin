@@ -1,6 +1,6 @@
 <?php
 
-    function DBP_db_create_ride(){
+    function DBP_tb_create_ride(){
         global $wpdb;
 
         $DBP_tb_name=$wpdb->prefix."ride_details";

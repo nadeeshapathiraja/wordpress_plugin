@@ -8,8 +8,8 @@
 //add custom page
 function DBP_add_front_page(){
     // include file
-    include_once("DBP_insert_form.php");
-    DBP_insert_data();
+    include_once("DBP_ride_insert_form.php");
+    DBP_insert_ride_data();
 }
 
 define('DBP_dir',dirname(__FILE__));
@@ -31,7 +31,7 @@ function function1(){
     );
 }
 
-add_shortcode('ride_contact_form','DBP_add_front_page');
+//add_shortcode('ride_contact_form','DBP_add_front_page');
 
 //define path
 if(!defined('ABSPATH')){
@@ -42,5 +42,5 @@ if(!defined('ABSPATH')){
 include_once("DBP_db_file.php");
 
 //register hook
-register_activation_hook(__FILE__,'DBP_db_create_ride');
+register_activation_hook(__FILE__,'DBP_tb_create_ride');
 ?>

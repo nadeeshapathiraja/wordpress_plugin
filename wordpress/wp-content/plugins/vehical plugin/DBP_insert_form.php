@@ -56,6 +56,7 @@ function DBP_insert_vehicle_data(){
         
         global $wpdb;
         $table_name= $wpdb->prefix.'vehical_infomation';
+        
         $path_array = wp_upload_dir(); // normal format start
         $file_name   =   pathinfo($DBP_imagefile ,PATHINFO_FILENAME).time().".".pathinfo($DBP_imagefile ,PATHINFO_EXTENSION);  
         $imgtype     =   strtolower(pathinfo($DBP_imagefile,PATHINFO_EXTENSION));                
